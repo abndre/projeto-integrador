@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Profissionais</title>
+    <link rel="shortcut icon" href="./public/images/stam.png" type="image/png" >
+
+    <style>
+        /* Para acessar um atributo (tipo o class do h1) uso o . + nome do atributo */
+        /* .red {
+            color: red;
+        } */
+        /* Para acessar o id, ao invés do . uso #
+        #page-give-classes {} */
+    </style>
+
+    <link rel="stylesheet" href="./public/styles/main.css">
+    <link rel="stylesheet" href="./public/styles/header.css">
+    <link rel="stylesheet" href="./public/styles/forms.css">
+    <link rel="stylesheet" href="./public/styles/page-give-classes.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap"
+        rel="stylesheet">
+
+    <script src="/scripts/addField.js" defer></script>
+
+    <!-- flatpickr -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css">
+
+</head>
+
+<body id="page-give-classes">
+    <!-- <h1 class="red">Proffy</h1> -->
+    <!-- <h1 id="page-give-classes">Proffy</h1> -->
+
+    <div id="container">
+        <header class="page-header">
+            <div class="top-bar-container">
+                <a href="./index.html">
+                    <img src="./public/images/icons/back.svg" alt="Voltar">
+                </a>
+                <img src="./public/images/stam-logo.png" alt="Logo">
+            </div>
+
+            <div class="header-content">
+                <strong>Cadastre um profissional</strong>
+                <p>É só preencher o formulário abaixo</p>
+            </div>
+
+        </header>
+
+        <main>
+            <form action="./end.html" id="create-class">
+                <fieldset>
+                    <legend>Dados do Profissional</legend>
+
+                    <div class="input-block">
+                        <label for="name">Nome</label>
+                        <input name="name" id="name" required>
+                    </div>
+
+                    <div class="select-block">
+                        <label for="school"> Habilidade </label>
+                        <select name="school" id="school" required>
+                            <option value="">Selecione uma Habilidade</option>
+                            <option value="1">Pintor</option>
+                            <option value="2">Azulegista</option>
+                            <option value="3">Pedreiro</option>
+                            <option value="4">Bombeiro</option>
+                        </select>
+                    </div>
+
+                    <div class="select-block">
+                        <label for="period"> Período </label>
+                        <select name="period" id="period" required>
+                            <option value="">Selecione um período</option>
+                            <option value="M">Manhã</option>
+                            <option value="T">Tarde</option>
+                        </select>
+                    </div>
+
+                </fieldset>
+
+
+                <!-- <fieldset>
+                    <legend>Sobre a aula</legend>
+                    <div class="select-block">
+                        <label for="subject"> Disciplina </label>
+                        <select name="subject" id="subject" required>
+                            <option value="">Selecione uma opção</option>
+                            <option value="1">Artes</option>
+                            <option value="2">Inglês</option>
+                            <option value="3">Ciências</option>
+                            <option value="4">Educação Física</option>
+                            <option value="5">Física</option>
+                            <option value="6">Geografia</option>
+                            <option value="7">História</option>
+                            <option value="8">Matemática</option>
+                            <option value="9">Língua Portuguesa</option>
+                            <option value="10">Química</option>
+                        </select>
+                    </div>
+                </fieldset> -->
+
+
+
+                <footer>
+                    <p>
+                        <img src="./public/images/icons/warning.svg" alt="Aviso importante">
+                        Importante! <br> Preencha com todos os dados
+                    </p>
+                    <!-- Preciso avisar o html que o botão irá enviar os dados do formuario (form=ID) acima -->
+                    <button type="submit" form="create-class">Salvar cadastro</button>
+                </footer>
+
+        </main>
+    </div>
+
+    <!-- flatpickr -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"> </script>
+    <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/pt.js"></script>
+
+    <script>
+        flatpickr("input[type=datetime-local]", {
+            "locale": "pt",
+            dateFormat: "Y-m-d",
+            altInput: true,
+            altFormat: "j / F / Y",
+            minDate: "today",
+            inline: true
+        });
+    </script>
+
+
+    <script src="./public/scripts/create-point.js"></script>
+
+</body>
+
+</html>
