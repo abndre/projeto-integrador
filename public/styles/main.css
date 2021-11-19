@@ -1,14 +1,14 @@
 /* CSS - Cascading Style Sheet - Página de Estilo em Cascata */
 
 :root {
-    --color-background: #F0F0F7;
+    --color-background:linear-gradient(rgba(0,0,0),rgb(38, 137, 196));
     --color-primary-lighter: #9871F5;
     --color-primary-light: #916BEA;
     --color-primary: #8257E5;
     --color-primary-dark: #774DD6;
     --color-primary-darker: #6842c2;
-    --color-secondary: #04D361;
-    --color-secondary-dark: #04bf58;
+    --color-secondary: rgb(82, 196, 255);
+    --color-secondary-dark: rgb(38, 137, 196);
     --color-title-in-primary: #FFFFFF;
     --color-text-in-primary: #D4C2FF;
     --color-text-title: #32264D;

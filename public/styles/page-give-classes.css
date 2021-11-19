@@ -127,7 +127,7 @@ Para aplicar a propriedade apenas num input que tenha um outro input antes de si
 
 .items-grid li.selected {
     background: #e1faec;
-    border: 2px solid #34cb79;
+    border: 2px solid rgb(55, 128, 87);
 }
 
 .items-grid li img,
