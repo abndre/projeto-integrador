@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./public/styles/header.css">
     <link rel="stylesheet" href="./public/styles/forms.css">
     <link rel="stylesheet" href="./public/styles/page-give-classes.css">
-    <link href="public/styles/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="public/styles/style.css">
 
 </head>
 
@@ -43,7 +43,8 @@
                         <img src="../projeto-integrador-main/public/images/logo2.jpg">
                     </a>
                     <ul>
-                        <li><a href="login1.html" class="ativo">Sair</a></li>
+                        <li><a href="index1.html">Home</a></li>
+                        <li><a href="login1.html">Sair</a></li>
                     </ul>
                 </nav>
            
@@ -60,6 +61,16 @@
                     </div>
 
                     <div class="input-block">
+                        <label for="name">Endereço</label>
+                        <input name="name" id="name" required>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="name">Cidade</label>
+                        <input name="name" id="name" required>
+                    </div>
+                    
+                    <div class="input-block">
                         <label for="name">Telefone</label>
                         <input name="name" id="name" >
                     </div>
@@ -74,7 +85,7 @@
                         <select name="school" id="school" required>
                             <option value="">Selecione uma Habilidade</option>
                             <option value="1">Pintor</option>
-                            <option value="2">Azulegista</option>
+                            <option value="2">Azulejista</option>
                             <option value="3">Pedreiro</option>
                             <option value="4">Bombeiro</option>
                             <option value="5">Eletricista</option>
@@ -98,9 +109,9 @@
                         Importante! <br> Preencha com todos os dados
                     </p>
                     <!-- Preciso avisar o html que o botão irá enviar os dados do formuario (form=ID) acima -->
-                    <button type="submit" form="create-class">Salvar cadastro</button>
-                </footer>
+                        <button type="submit" form="create-class">Salvar cadastro</button>
 
+                </footer>
         </main>
     </div>
 

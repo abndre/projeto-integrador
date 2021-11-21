@@ -13,6 +13,9 @@ header{
     background-position: center;
     background-size: cover;
 }
+img{
+    opacity: 0.9;
+}
 
 a{
     text-decoration: none;

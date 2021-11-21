@@ -1,7 +1,7 @@
 /* CSS - Cascading Style Sheet - Página de Estilo em Cascata */
 
 :root {
-    --color-background:linear-gradient(rgba(0,0,0),rgb(38, 137, 196));
+    --color-background:rgb(16, 56, 80);
     --color-primary-lighter: #9871F5;
     --color-primary-light: #916BEA;
     --color-primary: #8257E5;
